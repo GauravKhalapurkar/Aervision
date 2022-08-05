@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AREVISION TECHOLOGIES</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- hero + navbar -->
+    <div class="hero">
+      <video autoplay loop muted class="hero_video">
+        <source src="media/heroVideo.mp4" type="video/mp4" />
+      </video>
+      <nav>
+        <div id="navbar" class="nav_content">
+          <div class="social">
+            <a href="https://twitter.com/aervision"
+              ><i class="fa fa-twitter" style="font-size: 40px"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/aervision"
+              ><i class="fa fa-linkedin" style="font-size: 40px"></i
+            ></a>
+          </div>
+          <img src="media/logo.png" id="logo" />
+          <ul class="nav_menu" id="menu">
+            <li><a href="">SOLUTIONS</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero_content">
+        <div class="sentence">
+          <h1>AI & Machine Learning<br />'on the edge'</h1>
+        </div>
+        <button class="btn">OUR PRODUCTS</button>
+      </div>
+    </div>
+
+    <!-- subscribe -->
+    <div class="subscribe" id="subscribe">
+      <h1>STAY UPDATED</h1>
+      <p>NEW PRODUCTS, JOB OPPORTUNITIES AND UPCOMING PROJECTS</p>
+      <div>
+        <input placeholder="Email Address" />
+        <button class="btn">SIGN UP</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>© 2013-2022 AerVision Technologies Pty. Ltd.</p>
+      <div class="footer_contact">
+        <p><a href="mailto:sales@aervision.com">sales@aervision.com</a></p>
+        <p>
+          Australia : <a href="tel:+610280050495">+61 (02) 8005 0495</a> USA :
+          <a href="tel:+16506141625">+1 (650) 614-1625</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= logo.offsetTop) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
+</html>
