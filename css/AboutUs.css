@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+:root {
+  --color-primary: #f99f1f;
+  --color-primary-dark: #f47427;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: #00000000;
+
+  --transition: all 400ms ease;
+}
+
+/*---navbar---*/
+
+nav .nav_content {
+  width: 100%;
+  height: 12rem;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: transparent;
+  z-index: 10;
+}
+
+nav .social {
+  display: flex;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 3rem;
+  align-items: center;
+}
+
+nav i {
+  color: var(--color-primary);
+  margin: 0 2rem;
+}
+
+nav .nav_content img {
+  width: 35rem;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 4rem;
+  font-size: 20px;
+}
+
+.nav_menu li a {
+  color: var(--color-primary);
+}
+
+/*---hero---*/
+
+.hero {
+  top: 12rem;
+}
+
+.hero .row_with_image {
+  display: flex;
+  margin: 2rem 4rem;
+}
+
+.row_with_image .col-1 {
+  flex: 1;
+}
+
+.row_with_image .col-2 {
+  flex: 1;
+  background: var(--color-primary);
+  margin: 4rem 0;
+  padding: 4rem;
+  color: var(--color-white);
+  text-align: justify;
+}
+
+.hero .row_with_text {
+  display: flex;
+  margin: 2rem 14rem;
+}
+
+.row_with_text .col-1 {
+  flex: 1;
+  padding: 1rem;
+  color: var(--color-primary);
+}
+
+.row_with_text .col-2 {
+  flex: 1;
+  padding: 1rem;
+  color: var(--color-black);
+  text-align: justify;
+}
+
+.hero .partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .partners .title p {
+  background: var(--color-primary-dark);
+  text-align: center;
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+/*---footer---*/
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 5rem 0;
+  color: var(--color-white);
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer .footer_contact {
+  margin: 4rem 0 0 0;
+}
+
+.footer .footer_contact p a {
+  text-decoration: underline;
+  color: var(--color-white);
+  font-weight: 100;
+}
+
+/*---JAVASCRIPT---*/
+
+/*---Sticky navbar---*/
+
+.nav_content.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+}
