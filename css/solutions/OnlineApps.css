@@ -104,6 +104,9 @@ nav .nav_content img {
 h1 {
   margin: 2rem 0;
 }
+.small-container h3 {
+  font-size: 3rem;
+}
 
 .card-container {
   width: 1400px;
