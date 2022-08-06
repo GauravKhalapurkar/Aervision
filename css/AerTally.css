@@ -90,9 +90,6 @@ nav .nav_content img {
   flex-direction: column;
 }
 
-.hero .small-container {
-}
-
 .small-container h3,
 .small-container h1 {
   color: var(--color-primary);

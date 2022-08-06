@@ -82,16 +82,12 @@ nav .nav_content img {
 .max-width {
   max-width: 1600px;
   margin: auto;
+  text-align: center;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.hero .small-container {
-  text-align: center;
 }
 
 .small-container h3,
@@ -102,29 +98,37 @@ nav .nav_content img {
 }
 
 h1 {
+  width: max-content;
   margin: 2rem 0;
 }
 .small-container h3 {
   font-size: 3rem;
 }
 
-.card-container {
-  width: 1400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.small-container p {
+  font-size: medium;
+  text-align: left;
 }
 
-.bottom-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
+.max-width img {
+  max-width: 1600px;
+  object-fit: cover;
+  background: #f47427;
 }
 
-.bottom-nav h2 {
-  color: var(--color-black);
-  font-weight: 500;
+.video-container {
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
 }
 
 /*---footer---*/

@@ -91,6 +91,7 @@ nav .nav_content img {
 }
 
 .hero .small-container {
+  max-width: 1600px;
   text-align: center;
 }
 
