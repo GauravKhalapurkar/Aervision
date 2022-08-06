@@ -12,10 +12,15 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -73,8 +78,102 @@
             <div class="card"><img src="../media/aervision3.jpg" alt="" /></div>
             <div class="card"><img src="../media/aervision4.jpg" alt="" /></div>
           </div>
+
           <h1>AerAccess™ - A.I. based Multimodal Access Control</h1>
-          <p>SLIDER HERE</p>
+          <p>SLIDER START</p>
+
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <div class="slider-container swiper">
+              <div class="slider-content">
+                <div class="slider-card-container swiper-wrapper">
+                  <div class="slider-card swiper-slide">
+                    <div class="slider-card-content">
+                      <img src="../media/palmVeinIdentification.jpg" alt="" />
+                      <h4 style="padding: 1rem 0 1rem 1rem">
+                        Palm Vein Identification
+                      </h4>
+                      <p style="padding: 0 1rem 1rem 1rem">
+                        AerAccess palm-vein scanner captures the unique blood
+                        flow pattern, in a fraction of a second. This serves as
+                        an extremely accurate biometric template, with liveness
+                        test.
+                      </p>
+                      <a href=""><button class="btn">See More</button></a>
+                    </div>
+                  </div>
+                  <div class="slider-card swiper-slide">
+                    <div class="slider-card-content">
+                      <img src="../media/faceRecognition.jpg" alt="" />
+                      <h4 style="padding: 1rem 0 1rem 1rem">
+                        Face Recognition
+                      </h4>
+                      <p style="padding: 0 1rem 1rem 1rem">
+                        AerAccess' proprietary facial recognition technology
+                        inspired by 16 years of R&D, performs 2D, 3D & infrared
+                        facial scan with liveness test.
+                      </p>
+                      <a href=""><button class="btn">See More</button></a>
+                    </div>
+                  </div>
+                  <div class="slider-card swiper-slide">
+                    <div class="slider-card-content">
+                      <img src="../media/irisRecognition.jpg" alt="" />
+                      <h4 style="padding: 1rem 0 1rem 1rem">
+                        Iris Recognition
+                      </h4>
+                      <p style="padding: 0 1rem 1rem 1rem">
+                        AerAccess' iris scanner captures both eyes iris, with
+                        unprecedented accuracy.
+                      </p>
+                      <a href=""><button class="btn">See More</button></a>
+                    </div>
+                  </div>
+                  <div class="slider-card swiper-slide">
+                    <div class="slider-card-content">
+                      <img
+                        src="../media/mobilePhoneASecureAccessToken.jpg"
+                        alt=""
+                      />
+                      <h4 style="padding: 1rem 0 1rem 1rem">
+                        Mobile phone a secure access token
+                      </h4>
+                      <p style="padding: 0 1rem 1rem 1rem">
+                        A mobile device can be used as an access token, via
+                        Bluetooth, QR code, NFC emulation or other standard
+                        software-based access token protocols.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-card swiper-slide">
+                    <div class="slider-card-content">
+                      <img
+                        src="../media/builtInPreAccessTempCheck.jpg"
+                        alt=""
+                      />
+                      <h4 style="padding: 1rem 0 1rem 1rem">
+                        Built-in pre-access temperature check
+                      </h4>
+                      <p style="padding: 0 1rem 1rem 1rem">
+                        Infrared Thermometer scanner for temperature reading
+                        accurate to 0.3 degrees Celsius.
+                      </p>
+                      <a href=""><button class="btn">See More</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-btn">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <p>SLIDER END</p>
+
           <h1>Multi-modal Touchless Interaction</h1>
           <div class="card-container">
             <div class="card">
@@ -90,30 +189,34 @@
             <div class="card">
               <div class="card-content">
                 <img src="../media/voiceControl.jpg" alt="" />
-                <h4>Hand Gesture Recognition</h4>
+                <h4>Voice Control</h4>
                 <p>
-                  AerAccess device can track hand movements, enabling
-                  gesture-based and touchless user interaction.
+                  Voice recognition is an additional option for touchless
+                  control of a device. We also use noise cancellation technology
+                  to enable the AerAccess device to work in loud environments.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-content">
                 <img src="../media/eyeGazeTracking.jpg" alt="" />
-                <h4>Hand Gesture Recognition</h4>
+                <h4>Eye Gaze Tracking</h4>
                 <p>
-                  AerAccess device can track hand movements, enabling
-                  gesture-based and touchless user interaction.
+                  The AerAccess eye tracker can detect attention and focus of
+                  the user. It facilitates the ability to control a computer
+                  using the eyes to enable hands free option of kiosks and other
+                  devices.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-content">
                 <img src="../media/contactlessIDScanning.jpg" alt="" />
-                <h4>Hand Gesture Recognition</h4>
+                <h4>Contactless ID Scanning</h4>
                 <p>
-                  AerAccess device can track hand movements, enabling
-                  gesture-based and touchless user interaction.
+                  AerAccess™ has the ability to scan an ID or Passport by
+                  holding it up to the built-in cameras. AerAccess can also
+                  perform optical character recognition.
                 </p>
               </div>
             </div>
@@ -237,4 +340,8 @@
       };
     </script>
   </body>
+
+  <!-- Swiper -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/script.js"></script>
 </html>
