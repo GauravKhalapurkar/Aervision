@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #f99f1f;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: #00000000;
+
+  --transition: all 400ms ease;
+}
+
+/*---navbar---*/
+
+nav .nav_content {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 12rem;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--color-white);
+}
+
+nav .social {
+  display: flex;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 3rem;
+  align-items: center;
+}
+
+nav .social a {
+  font-size: 2rem;
+}
+
+nav i {
+  color: var(--color-primary);
+  margin: 0 2rem;
+}
+
+nav .nav_content img {
+  width: 28rem;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 4rem;
+  transition: all 0.3s ease;
+}
+
+.nav_menu li a {
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.nav_content .menu-btn i {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  color: var(--color-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.social {
+  transition: all 0.3s ease;
+}
+
+#click:checked ~ .nav_menu {
+  left: 0%;
+}
+
+#click:checked ~ .social {
+  left: 0%;
+}
+
+#click:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+
+#click {
+  display: none;
+}
+
+/*---JAVASCRIPT---*/
+
+.nav_content.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+}
+
+/*---RESPONSIVE NAVBAR---*/
+@media (max-width: 1040px) {
+  nav .nav_content {
+    background: var(--color-white);
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .nav_content .menu-btn i {
+    display: block;
+  }
+
+  .nav_menu {
+    position: fixed;
+    top: 12rem;
+    left: -100%;
+    background: var(--color-white);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav .nav_content img {
+    width: 20rem;
+    position: fixed;
+    left: 4rem;
+    top: 5rem;
+  }
+
+  nav .social {
+    position: fixed;
+    top: 40rem;
+    left: -100%;
+    margin: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 1;
+  }
+
+  nav .social a {
+    font-size: 2rem;
+  }
+
+  .nav_menu li {
+    margin: 4rem 0;
+  }
+
+  .nav_menu li a {
+    display: block;
+    font-size: 1.5rem;
+  }
+}

@@ -1,3 +1,5 @@
+@import url("../css/components/Navbar.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -33,81 +35,8 @@ html {
 /*---navbar---*/
 
 nav .nav_content {
-  width: 100%;
-  height: 12rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   background: var(--color-transparent);
-}
-
-nav .social {
-  display: flex;
-  height: 12rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 3rem;
-  align-items: center;
-}
-
-nav .social a {
-  font-size: 2rem;
-}
-
-nav i {
-  color: var(--color-primary);
-  margin: 0 2rem;
-}
-
-nav .nav_content img {
-  width: 28rem;
-}
-
-.nav_menu {
-  display: flex;
-  gap: 4rem;
-  font-size: 20px;
-  transition: all 0.3s ease;
-}
-
-.nav_menu li a {
-  color: var(--color-primary);
-  font-size: 1rem;
-}
-
-.nav_content .menu-btn i {
-  position: fixed;
-  top: 5rem;
-  right: 1rem;
-  color: var(--color-primary);
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-
-.social {
-  transition: all 0.3s ease;
-}
-
-#click:checked ~ .nav_menu {
-  left: 0%;
-}
-
-#click:checked ~ .social {
-  left: 0%;
-}
-
-#click:checked ~ .menu-btn i:before {
-  content: "\f00d";
-}
-
-#click {
-  display: none;
 }
 
 /*---hero---*/
@@ -167,8 +96,8 @@ nav .nav_content img {
 
 .subscribe input {
   padding: 1rem 3rem;
-  font-size: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 1rem;
+  border: 0.05rem solid rgba(0, 0, 0, 0.12);
   margin: 0 1rem;
 }
 
@@ -188,7 +117,7 @@ nav .nav_content img {
 }
 
 .footer p {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -200,68 +129,4 @@ nav .nav_content img {
   text-decoration: underline;
   color: var(--color-white);
   font-weight: 100;
-}
-
-/*---JAVASCRIPT---*/
-
-/*---Sticky navbar---*/
-
-.nav_content.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: var(--color-black);
-}
-
-/*---RESPONSIVE NAVBAR---*/
-@media (max-width: 1040px) {
-  nav .nav_content {
-    background: var(--color-black);
-  }
-
-  .nav_content .menu-btn i {
-    display: block;
-  }
-
-  .nav_menu {
-    position: fixed;
-    top: 12rem;
-    left: -100%;
-    background: var(--color-black);
-    height: 100vh;
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  nav .nav_content img {
-    width: 20rem;
-    position: fixed;
-    left: 4rem;
-    top: 5rem;
-  }
-
-  nav .social {
-    position: fixed;
-    top: 40rem;
-    left: -100%;
-    margin: 0;
-    width: 100%;
-    display: block;
-    text-align: center;
-    z-index: 1;
-  }
-
-  nav .social a {
-    font-size: 2rem;
-  }
-
-  .nav_menu li {
-    margin: 4rem 0;
-  }
-
-  .nav_menu li a {
-    display: block;
-    font-size: 1.5rem;
-  }
 }

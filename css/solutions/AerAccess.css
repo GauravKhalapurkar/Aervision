@@ -1,3 +1,5 @@
+@import url(../components/Navbar.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -34,48 +36,6 @@ html {
 }
 
 /*---navbar---*/
-
-nav .nav_content {
-  width: 100%;
-  height: 12rem;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background: transparent;
-  z-index: 10;
-}
-
-nav .social {
-  display: flex;
-  height: 12rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 3rem;
-  align-items: center;
-}
-
-nav i {
-  color: var(--color-primary);
-  margin: 0 2rem;
-}
-
-nav .nav_content img {
-  width: 35rem;
-}
-
-.nav_menu {
-  display: flex;
-  gap: 4rem;
-  font-size: 20px;
-}
-
-.nav_menu li a {
-  color: var(--color-primary);
-}
 
 /*---hero---*/
 
@@ -227,15 +187,4 @@ h1 {
   text-decoration: underline;
   color: var(--color-white);
   font-weight: 100;
-}
-
-/*---JAVASCRIPT---*/
-
-/*---Sticky navbar---*/
-
-.nav_content.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: var(--color-white);
 }
