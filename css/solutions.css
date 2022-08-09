@@ -1,0 +1,124 @@
+@import url("../css/components/Navbar.css");
+
+@font-face {
+  font-family: omnes;
+  src: url(/assets/fonts/OmnesFont/@font-face/07dc45de3c2d37fcd503045055b2253b.woff);
+}
+.solutions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 1rem 3rem;
+}
+@media screen and (max-width: 600px) {
+  .solutions {
+    grid-template-columns: 1fr;
+  }
+}
+.solutions .solution {
+  margin-bottom: 2rem;
+}
+.solutions img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity ease 200ms;
+}
+.solutions h1 {
+  color: #f99f1f;
+  margin: 1rem 0;
+  font-family: omnes;
+  font-weight: 400;
+}
+.solutions a {
+  text-decoration: none;
+}
+.solutions img:hover {
+  opacity: 0.8;
+}
+.hrline {
+  max-width: 600px;
+  padding: 1rem 5rem;
+  border-bottom: 2px solid black;
+  margin: 5rem auto 4rem auto;
+}
+.our_clients {
+  color: #f99f1f;
+  font-family: omnes;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+/* *************** */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+.swiper-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.swiper-prev,
+.swiper-next {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+/*---footer---*/
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 5rem 0;
+  color: var(--color-white);
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer .footer_contact {
+  margin: 4rem 0 0 0;
+}
+
+.footer .footer_contact p a {
+  text-decoration: underline;
+  color: var(--color-white);
+  font-weight: 100;
+}

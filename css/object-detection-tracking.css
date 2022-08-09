@@ -1,0 +1,94 @@
+@import url("../css/components/Navbar.css");
+
+@font-face {
+  font-family: omnes;
+  src: url(/assets/fonts/OmnesFont/@font-face/07dc45de3c2d37fcd503045055b2253b.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: omnes;
+  font-weight: 400;
+}
+.object-detect > h1 {
+  color: #f99f1f;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0 3rem;
+}
+.video-container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+.object-detect > p {
+  margin: 2rem 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+.object-detect > h2 {
+  color: #f99f1f;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  background: black;
+  z-index: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .video-container video {
+    object-fit: cover;
+  }
+}
+
+.backsol a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.backsol .backsol-btn {
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 50px;
+  background: #f99f1f;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+/*---footer---*/
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 5rem 0;
+  color: var(--color-white);
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer .footer_contact {
+  margin: 4rem 0 0 0;
+}
+
+.footer .footer_contact p a {
+  text-decoration: underline;
+  color: var(--color-white);
+  font-weight: 100;
+}

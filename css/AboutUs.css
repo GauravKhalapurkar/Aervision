@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 .btn {
@@ -47,7 +48,6 @@ html {
 }
 
 .row_with_image .col-2 {
-  flex: 1;
   background: var(--color-primary);
   margin: 4rem 0;
   padding: 4rem;
@@ -83,7 +83,7 @@ html {
 .hero .partners .title p {
   background: var(--color-primary-dark);
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: var(--color-white);
 }
 
@@ -98,7 +98,7 @@ html {
 }
 
 .footer p {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -110,4 +110,36 @@ html {
   text-decoration: underline;
   color: var(--color-white);
   font-weight: 100;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 998px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 638px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 484px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 25%;
+  }
 }

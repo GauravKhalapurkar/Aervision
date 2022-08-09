@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/object-detection-tracking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PERSON BIKE AND BAG DETECTION - AERVISION TECHNOLOGIES</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <div id="navbar" class="nav_content">
+        <input type="checkbox" id="click" />
+        <div class="social">
+          <a href="https://twitter.com/aervision"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/aervision"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <a href="./index.html"><img src="media/logo.png" id="logo" /></a>
+        <label for="click" class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </label>
+        <ul class="nav_menu" id="menu">
+          <li><a href="">SOLUTIONS</a></li>
+          <li>
+            <a href="./AboutUs.html">ABOUT US</a>
+          </li>
+          <li><a href="./ContactUs.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="object-detect">
+      <h1>Person, bike & bag detection</h1>
+      <p>
+        AerWatch can detect, track people, in various poses such as walking or
+        riding a bicycle, as well as their bag, purse, backpack or suitcase in
+        the video.
+      </p>
+
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="/media/videos/arewatch-og.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <h2>Back to AerWatch™</h2>
+
+      <div class="backsol">
+        <a href="solutions/aerwatch.html"
+          ><button class="backsol-btn">AerWatch™</button></a
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>© 2013-2022 AerVision Technologies Pty. Ltd.</p>
+      <div class="footer_contact">
+        <p><a href="mailto:sales@aervision.com">sales@aervision.com</a></p>
+        <p>
+          Australia : <a href="tel:+610280050495">+61 (02) 8005 0495</a> USA :
+          <a href="tel:+16506141625">+1 (650) 614-1625</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= logo.offsetTop) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
+</html>

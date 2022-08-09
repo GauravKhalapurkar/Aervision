@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 .btn {
@@ -129,4 +130,18 @@ nav .nav_content {
   text-decoration: underline;
   color: var(--color-white);
   font-weight: 100;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 998px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
 }

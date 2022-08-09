@@ -1,0 +1,474 @@
+@import url("../components/Navbar.css");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: omnes;
+  src: url(/assets/fonts/OmnesFont/@font-face/07dc45de3c2d37fcd503045055b2253b.woff);
+}
+.container {
+  max-width: 1000px;
+  margin: 1rem auto;
+  font-family: omnes;
+  text-align: center;
+  padding: 0rem 1rem;
+}
+.container h4 {
+  margin: 2rem 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.container h3 {
+  font-size: 4rem;
+  color: #f99f1f;
+  margin: 0;
+  font-weight: 500;
+}
+
+.container h5 {
+  font-weight: 1000;
+  font-size: 1.05rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.container p {
+  line-height: 1.7rem;
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+/* *************** */
+.swiper {
+  width: 100%;
+  height: 100%;
+  font-family: omnes;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide .f-img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+.engswiper-btn,
+.myswiper-btn,
+.sensswiper-btn,
+.adaptswiper-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.myswiper-next,
+.myswiper-prev,
+.engswiper-next,
+.engswiper-prev,
+.sensswiper-next,
+.sensswiper-prev,
+.adaptswiper-next,
+.adaptswiper-prev {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.feature h3 {
+  text-align: center;
+  font-size: 4rem;
+  color: #f99f1f;
+  font-weight: 600;
+  font-family: omnes;
+}
+
+.f1,
+.f3 {
+  background: #f99f1f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  text-align: left;
+  height: max-content;
+  margin: auto 3rem;
+  margin-top: 5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 300px;
+}
+.f2 p {
+  background: #f99f1f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  text-align: left;
+  height: max-content;
+  margin: auto 3rem;
+  margin-top: 5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+.f-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* ----------- */
+
+.video-container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+/* .video-container .caption {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      color: #dc0000;
+      padding: 10px;
+    } */
+
+/* *********** */
+
+.c-wrapper .card {
+  background-color: #f99f1f;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.c-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #f99f1f;
+  margin: 2rem;
+}
+.heading {
+  text-align: left;
+  font-size: 1.2rem;
+}
+.c-content {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  text-align: left;
+  height: max-content;
+  margin: auto 2rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+  /* min-height: 150px; */
+}
+.c-content-wrapper {
+  font-family: omnes;
+  min-height: 300px;
+  font-weight: 100px;
+}
+.c-wrapper .eng-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+}
+.c-wrapper .heading,
+.c-wrapper .c-btn,
+.s-wrapper .c-btn {
+  margin: 1rem 3rem 1.5rem 3rem;
+  padding: 0;
+  text-align: left;
+  /* text-decoration: none; */
+  /* color: white; */
+}
+
+.c-wrapper .c-btn,
+.s-wrapper .c-btn {
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 75px;
+  border: none;
+  outline: none;
+  background: #000;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  transition-delay: 0.164467s;
+  cursor: pointer;
+}
+
+.c-wrapper .c-btn:hover,
+.s-wrapper .c-btn:hover {
+  background: #52360e;
+}
+
+.card-container h1 {
+  margin-top: 2rem;
+  color: #f99f1f;
+  text-align: center;
+  font-size: 4rem;
+  font-family: omnes;
+  font-weight: 400;
+}
+
+.sensSwiper .s-wrapper {
+  background: #f99f1f;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.s-wrapper .img-wrapper img {
+  height: 300px;
+  width: 100%;
+}
+.s-wrapper .content-wrapper {
+  font-family: omnes;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.s-wrapper h1 {
+  font-family: omnes;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0.5rem 0;
+  color: #fff;
+  text-align: left;
+}
+
+.sensing-container .head-sens {
+  margin-top: 5rem;
+  color: #f99f1f;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: omnes;
+  font-weight: 400;
+}
+
+.s-wrapper .sens-card {
+  min-height: 450px;
+}
+
+.adaptSwiper .s-wrapper {
+  background: #f99f1f;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.alarmSwiper .s-wrapper {
+  background: #f99f1f;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* *********** */
+
+.analyst-forecasting .heading {
+  text-align: center;
+  font-family: omnes;
+  font-size: 4rem;
+  font-weight: 200;
+  color: #f99f1f;
+}
+
+/* **************** */
+
+.forecasting {
+  font-family: omnes;
+}
+
+.forecasting .forcasthead {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+  color: #f99f1f;
+  font-family: omnes;
+}
+
+.forecasting .forecast-card-wrapper {
+  margin: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.forecast-card-wrapper .forecast-img-wrapper img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.forecast-card-wrapper .forecast-content {
+  line-height: 1.5rem;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.forecast-card-wrapper h5 {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+/* ***************** */
+
+.deploy,
+.key {
+  font-family: omnes;
+}
+.deploy h2,
+.key h2 {
+  text-align: center;
+  color: #f99f1f;
+  font-size: 4rem;
+}
+.deploy .deploy-content-wrapper {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.deploy .deploy-content-wrapper img {
+  width: 100%;
+}
+.deploy .deploy-content,
+.key ul li {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+.key h2 {
+  padding: 0;
+  margin: 0;
+}
+.key {
+  margin-top: 5rem;
+}
+.key .key-content-wrapper {
+  max-width: 500px;
+  margin: 1rem auto;
+}
+.key a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.key .key-btn {
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 50px;
+  background: #f99f1f;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+/*---footer---*/
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 5rem 0;
+  color: var(--color-white);
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer .footer_contact {
+  margin: 4rem 0 0 0;
+}
+
+.footer .footer_contact p a {
+  text-decoration: underline;
+  color: var(--color-white);
+  font-weight: 100;
+}
+
+/* ********************** */
+
+.next-sol a {
+  font-family: omnes;
+  /* width: max-content; */
+  /* float: right; */
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #000;
+  gap: 2.5rem;
+  margin-right: 3rem;
+}
+.next-sol .next-text {
+  text-align: right;
+}
+
+/* ************* */
+
+@media screen and (max-width: 992px) {
+  .forecasting .forecast-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forecasting .forecast-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
