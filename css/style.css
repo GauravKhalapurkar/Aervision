@@ -55,10 +55,11 @@ nav .nav_content {
   justify-content: center;
 }
 
-.hero_video {
+.hero .hero_video {
+  width: 100%;
+  height: 100vh;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  object-fit: cover;
   z-index: -1;
 }
 

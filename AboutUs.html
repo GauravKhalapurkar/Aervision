@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +40,7 @@
           <i class="fa fa-bars"></i>
         </label>
         <ul class="nav_menu" id="menu">
-          <li><a href="">SOLUTIONS</a></li>
+          <li><a href="./solutions.html">SOLUTIONS</a></li>
           <li style="border-bottom: 1px solid #f99f1f">
             <a href="./AboutUs.html">ABOUT US</a>
           </li>
@@ -136,8 +140,106 @@
       <!-- partners -->
       <div class="partners">
         <div class="title"><p>PARTNERS</p></div>
-        <h3>The scroller</h3>
       </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/amgc.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/eara.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/asc.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/amazon.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/axis.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/microsoft.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/braemac.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/afterdark.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/ca.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/cds.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/centorrino_tech.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/ept.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/eyelock.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/fogscreen.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/fujitsu.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/honeywell.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/hrs.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/ibase.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/intellidesign.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/micromax.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/nvidia.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/providence.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/quest_security.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/siemens.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/vedalion.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/vtol.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/partnerImg/xenon.png" alt="" />
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div class="swiper-btn">
+      <button class="swiper-prev">
+        <img src="media/left-arrow.png" alt="previous" width="25" height="25" />
+      </button>
+      <button class="swiper-next">
+        <img src="media/right-arrow.png" alt="next" width="25" height="25" />
+      </button>
     </div>
 
     <!-- footer -->
@@ -153,6 +255,37 @@
     </div>
 
     <!-- JAVASCRIPT -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 1,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          566: {
+            slidesPerView: 5,
+          },
+          1000: {
+            slidesPerView: 9,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+      });
+    </script>
 
     <script>
       var navbar = document.getElementById("navbar");

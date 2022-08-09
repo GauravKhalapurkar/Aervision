@@ -48,7 +48,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 4rem;
+  /*padding: 0 4rem;*/
+}
+
+.hero .small-container {
+  text-align: center;
 }
 
 .max-width h1 {
@@ -61,23 +65,21 @@ html {
 .max-width p {
   color: var(--color-black);
   font-size: 1rem;
-  margin: 2rem 0;
 }
 
 .top-card-container {
-  width: 90vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .top-card-container .top-card {
-  background: #f47427;
-  border-radius: 5rem;
+  width: 100%;
   text-align: center;
 }
 
 .top-card-container .top-card img {
-  width: calc(25% - 2rem);
-  height: calc(100%);
+  object-fit: cover;
 }
 
 .card-container {
@@ -93,13 +95,13 @@ html {
 .card {
   width: calc(25% - 2rem);
   height: calc(35% - 2rem);
-  margin: 3rem 0;
+  /*margin: 3rem 0;*/
 }
 
 .slider-card {
   width: calc(25% - 2rem);
   height: calc(35% - 2rem);
-  margin: 3rem 0;
+  /*margin: 3rem 0;*/
 }
 
 .card .card-content {
@@ -179,6 +181,84 @@ html {
 .bottom-nav h2 {
   color: var(--color-black);
   font-weight: 500;
+}
+
+/*---Swiper---*/
+
+.alarmSwiper .s-wrapper {
+  background: #f99f1f;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  font-family: omnes;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide .f-img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.sensswiper-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.sensswiper-next,
+.sensswiper-prev {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.s-wrapper .c-btn:hover {
+  background: #52360e;
+}
+
+.s-wrapper .img-wrapper img {
+  width: 80%;
+  height: 450px;
+}
+
+.s-wrapper .sens-card {
+  min-height: 450px;
+}
+
+.sensing-container .head-sens {
+  margin-top: 5rem;
+  color: #f99f1f;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: omnes;
+  font-weight: 400;
 }
 
 /*---footer---*/
