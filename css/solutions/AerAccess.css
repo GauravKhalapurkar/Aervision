@@ -40,7 +40,7 @@ html {
 /*---hero---*/
 
 .max-width {
-  max-width: 100vw;
+  max-width: 90vw;
   margin: auto;
 }
 
@@ -48,7 +48,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*padding: 0 4rem;*/
+  padding: 0 4rem;
 }
 
 .hero .small-container {
@@ -176,6 +176,10 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+}
+
+.bottom-width {
+  width: 90vw;
 }
 
 .bottom-nav h2 {
