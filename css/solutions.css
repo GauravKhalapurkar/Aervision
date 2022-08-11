@@ -1,9 +1,14 @@
 @import url("../css/components/Navbar.css");
 
-@font-face {
-  font-family: omnes;
-  src: url(/assets/fonts/OmnesFont/@font-face/07dc45de3c2d37fcd503045055b2253b.woff);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
 }
+
 .solutions {
   display: grid;
   grid-template-columns: 1fr 1fr;
